@@ -17,19 +17,22 @@ const Events = () => {
     {
       image: "https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg",
       title: "Welcome Event",
-      text: "First event of the year",
+      date: "September 10 7:00 - 8:00 PM EST",
+      description: "First event of the year",
     },
     {
       image:
         "https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg",
       title: "Alex Caruso",
-      text: "THE TRUE GOAT",
+      date: "September 14 6:30 - 7:30 PM EST",
+      description: "THE TRUE GOAT",
     },
     {
       image:
         "https://www.insidehook.com/wp-content/uploads/2020/03/steph-curry-nba-jam-e1583192954848.jpg?fit=734%2C488",
       title: "Steph Curry",
-      text: "he good",
+      date: "October 23 4:00 - 5:00 PM EST",
+      description: "he good",
     },
   ];
 
@@ -41,7 +44,7 @@ const Events = () => {
         <img className="card-img-top" src={card.image} alt="Card image cap"></img>
         <div className="card-body">
           <h5 className="card-title">{card.title}</h5>
-          <p className="card-text">{card.text}</p>
+          <p className="card-text">{card.date}</p>
           <NavLink
             className="nav-link"
             activeClassName="active"
@@ -51,7 +54,8 @@ const Events = () => {
                 // card: card,
                 image: card.image,
                 title: card.title,
-                text: card.text
+                date: card.date,
+                description: card.description
               }
             }}>
             View Details
@@ -60,33 +64,6 @@ const Events = () => {
       </div>
     );
   };
-
-  const renderEventModal = (card) => {
-    setIsOpen(true);
-    console.log("Pressed!")
-    return (
-      // <Modal
-      //   isOpen={isOpen}
-      //   onRequestClose={() => setIsOpen(false)}
-      //   style={
-      //     {
-      //       overlay: {
-      //         backgroundColor: 'grey'
-      //       },
-      //       content: {
-      //         color: 'purple'
-      //       }
-      //     }
-      //   }>
-      //   {/* <img src={image}></img> */}
-      //   <h2 style={{ textAlign: 'center' }}>{card.title}</h2>
-      //   <p style={{ textAlign: 'center' }}>{card.text}</p>
-      //   <a href="#" style={{ textAlign: 'center' }}>Event Details</a>
-      //   <button onClick={() => setIsOpen(false)}>Close</button>
-      // </Modal>
-      <EventDetails />
-    );
-  }
 
   const renderAllItems = () => {
     return (
