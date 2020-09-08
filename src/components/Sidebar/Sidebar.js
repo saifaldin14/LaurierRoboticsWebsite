@@ -59,7 +59,7 @@ class Sidebar extends React.Component {
         <div className="sidebar-wrapper" ref={this.sidebar}>
           <Nav>
             {this.props.routes.map((prop, key) => {
-              if (prop.name !== "Event Details") {
+              if (prop.name !== "Event Details" && prop.name !== "Privacy Policy") {
                 return (
                   <li
                     className={

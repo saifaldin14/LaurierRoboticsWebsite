@@ -1,0 +1,14 @@
+#DetailsImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#DetailsH1 {
+    color: #4B0082;
+    text-align: center;
+    font-size: 4rem;
+}
+#DetailsH2 {
+    text-align: center;
+    font-size: 2rem;
+}

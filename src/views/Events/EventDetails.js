@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { } from './EventDetails.css';
 
 const EventDetails = (props) => {
   var s = props.location.cardProp;
@@ -90,15 +91,18 @@ const EventDetails = (props) => {
   // }
 
   return (
-    <>
-      <div className="content">
+    <div className="content">
+      <div id="DetailsImg">
         <img src={list[0]}></img>
-        <h1 id="h1">{list[1]}</h1>
-        <h2 id="h2">{list[2]}</h2>
-        {/* Add this later when we have a privacy policy */}
-        {/* <button style={{ width: 100, height: 50 }} onClick={handleClick}>Add Event</button> */}
       </div>
-    </>
+      <h1 id="DetailsH1">{list[1]}</h1>
+      <h2 id="DetailsH2">{list[2]}</h2>
+      <p id="DetailsP">
+        {list[3]}
+      </p>
+      {/* Add this later when we have a privacy policy */}
+      {/* <button style={{ width: 100, height: 50 }} onClick={handleClick}>Add Event</button> */}
+    </div>
   );
 }
 export default EventDetails;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { } from "./Events.css";
 import Modal from 'react-modal';
-import { Link, Route, Switch, BrowserRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import EventDetails from "./EventDetails";
 
 const Events = () => {
@@ -15,24 +15,22 @@ const Events = () => {
   // );
   const cardInfo = [
     {
-      image: "https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg",
+      image: "https://cdn.eventplanner.net/imgs/xnr6226_6-tips-to-make-your-online-participants-feel-welcome-in-a-hybrid-event.jpg",
       title: "Welcome Event",
       date: "September 10 7:00 - 8:00 PM EST",
       description: "First event of the year",
     },
     {
-      image:
-        "https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg",
-      title: "Alex Caruso",
+      image: "https://d1hks021254gle.cloudfront.net/wp-content/uploads/2019/10/060-ARGO-COLONYB-10467-Sept-AWA-Cont-Hub-Story-Successful-Meeting-header-1200x675-1024x576.jpg",
+      title: "Robot Strategy Meeting",
       date: "September 14 6:30 - 7:30 PM EST",
-      description: "THE TRUE GOAT",
+      description: "Meeting to discuss the strategy and timeline for building the robot",
     },
     {
-      image:
-        "https://www.insidehook.com/wp-content/uploads/2020/03/steph-curry-nba-jam-e1583192954848.jpg?fit=734%2C488",
-      title: "Steph Curry",
+      image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Architect-Engineer-Meeting-Peo-101361728_oxgf0s.jpg",
+      title: "Hardware Team Meeting",
       date: "October 23 4:00 - 5:00 PM EST",
-      description: "he good",
+      description: "Meeting to discuss 3D model of the robot and budget meeting with the Finance Team",
     },
   ];
 
@@ -44,7 +42,7 @@ const Events = () => {
         <img className="card-img-top" src={card.image} alt="Card image cap"></img>
         <div className="card-body">
           <h5 className="card-title">{card.title}</h5>
-          <p className="card-text">{card.date}</p>
+          <h6 className="card-text">{card.date}</h6>
           <NavLink
             className="nav-link"
             activeClassName="active"

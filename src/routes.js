@@ -7,6 +7,7 @@ import MeetTheTeam from "views/MeetTheTeam/MeetTheTeam.js";
 import Projects from "views/Projects/Projects.js";
 import Sponsership from "views/Sponsership/Sponsership.js";
 import EventDetails from "views/Events/EventDetails";
+import PrivacyPolicy from "views/AboutUs/PrivacyPolicy";
 
 var routes = [
   {
@@ -59,6 +60,14 @@ var routes = [
     layout: "/admin",
   },
   {
+    pro: true,
+    path: "/contactus",
+    name: "Contact Us",
+    icon: "nc-icon nc-send",
+    component: ContactUs,
+    layout: "/admin",
+  },
+  {
     path: "/eventDetails",
     name: "Event Details",
     icon: "nc-icon nc-favourite-28",
@@ -66,11 +75,10 @@ var routes = [
     layout: "/admin",
   },
   {
-    pro: true,
-    path: "/contactus",
-    name: "Contact Us",
-    icon: "nc-icon nc-send",
-    component: ContactUs,
+    path: "/privacyPolicy",
+    name: "Privacy Policy",
+    icon: "nc-icon nc-favourite-28",
+    component: PrivacyPolicy,
     layout: "/admin",
   },
 ];
