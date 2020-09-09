@@ -37,3 +37,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
+#pPolicyLink {
+    color:#4B0082;
+    font-size: 1rem;
+}

@@ -23,6 +23,7 @@ class AboutUs extends React.Component {
           <br />
 
           <NavLink
+            id="pPolicyLink"
             className="nav-link"
             activeClassName="active"
             to={{
