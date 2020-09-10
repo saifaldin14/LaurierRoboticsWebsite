@@ -75,7 +75,7 @@ const Events = () => {
     return (
       <div className="content">
         {/* CODE GOES HERE INSIDE THE <DIV> */}
-        <h2 id="events-h2">There are no events yet</h2>
+        <h2 id="events-h2">There are no events yet. Come back again to see anything new</h2>
       </div>
     );
   }
