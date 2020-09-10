@@ -39,11 +39,11 @@ const EventDetails = (props) => {
   //           'location': '800 Howard St., San Francisco, CA 94103',
   //           'description': list[2],
   //           'start': {
-  //             'dateTime': '2020-06-28T09:00:00-07:00',
+  //             'dateTime': '2020-09-10T09:00:00-07:00',
   //             'timeZone': 'America/Los_Angeles'
   //           },
   //           'end': {
-  //             'dateTime': '2020-06-28T17:00:00-07:00',
+  //             'dateTime': '2020-09-10T17:00:00-07:00',
   //             'timeZone': 'America/Los_Angeles'
   //           },
   //           'recurrence': [

@@ -14,24 +14,24 @@ const Events = () => {
   //   </>
   // );
   const cardInfo = [
-    {
-      image: "https://cdn.eventplanner.net/imgs/xnr6226_6-tips-to-make-your-online-participants-feel-welcome-in-a-hybrid-event.jpg",
-      title: "Welcome Event",
-      date: "September 10 7:00 - 8:00 PM EST",
-      description: "First event of the year",
-    },
-    {
-      image: "https://d1hks021254gle.cloudfront.net/wp-content/uploads/2019/10/060-ARGO-COLONYB-10467-Sept-AWA-Cont-Hub-Story-Successful-Meeting-header-1200x675-1024x576.jpg",
-      title: "Robot Strategy Meeting",
-      date: "September 14 6:30 - 7:30 PM EST",
-      description: "Meeting to discuss the strategy and timeline for building the robot",
-    },
-    {
-      image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Architect-Engineer-Meeting-Peo-101361728_oxgf0s.jpg",
-      title: "Hardware Team Meeting",
-      date: "October 23 4:00 - 5:00 PM EST",
-      description: "Meeting to discuss 3D model of the robot and budget meeting with the Finance Team",
-    },
+    // {
+    //   image: "https://cdn.eventplanner.net/imgs/xnr6226_6-tips-to-make-your-online-participants-feel-welcome-in-a-hybrid-event.jpg",
+    //   title: "Welcome Event",
+    //   date: "September 10 7:00 - 8:00 PM EST",
+    //   description: "First event of the year",
+    // },
+    // {
+    //   image: "https://d1hks021254gle.cloudfront.net/wp-content/uploads/2019/10/060-ARGO-COLONYB-10467-Sept-AWA-Cont-Hub-Story-Successful-Meeting-header-1200x675-1024x576.jpg",
+    //   title: "Robot Strategy Meeting",
+    //   date: "September 14 6:30 - 7:30 PM EST",
+    //   description: "Meeting to discuss the strategy and timeline for building the robot",
+    // },
+    // {
+    //   image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Architect-Engineer-Meeting-Peo-101361728_oxgf0s.jpg",
+    //   title: "Hardware Team Meeting",
+    //   date: "October 23 4:00 - 5:00 PM EST",
+    //   description: "Meeting to discuss 3D model of the robot and budget meeting with the Finance Team",
+    // },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +75,7 @@ const Events = () => {
     return (
       <div className="content">
         {/* CODE GOES HERE INSIDE THE <DIV> */}
-        <h2 id="events-h2">No events yet</h2>
+        <h2 id="events-h2">There are no events yet</h2>
       </div>
     );
   }
