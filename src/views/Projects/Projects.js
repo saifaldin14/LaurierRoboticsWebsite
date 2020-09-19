@@ -19,22 +19,26 @@ const Projects = () => {
   const updateData = [
     {
       message: "Update 1",
+      color: "primary"
     },
     {
       message: "Update 2",
+      color: "info"
     },
     {
       message: "Update 3",
+      color: "primary"
     },
     {
       message: "Update 4",
+      color: "info"
     },
   ];
 
   const renderUpdate = (update) => {
     return (
       <UncontrolledAlert
-        color="info"
+        color={update.color}
         fade={false}
       >
         <span data-notify="message">
