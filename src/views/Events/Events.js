@@ -4,44 +4,8 @@ import Modal from 'react-modal';
 import { NavLink } from 'react-router-dom';
 import EventDetails from "./EventDetails";
 import ReactPlayer from "react-player";
-import image from '../../assets/img/hardwarebg.jpg';
+import { cardInfo, videoURL } from './EventsData';
 const Events = () => {
-  const cardInfo = [
-    {
-      image: image,
-      title: "Welcome Event",
-      date: "September 10 7:00 - 8:00 PM EST",
-      description: "First event of the year",
-    },
-    {
-      image: image,
-      title: "Robot Strategy Meeting",
-      date: "September 14 6:30 - 7:30 PM EST",
-      description: "Meeting to discuss the strategy and timeline for building the robot",
-    },
-    {
-      image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Architect-Engineer-Meeting-Peo-101361728_oxgf0s.jpg",
-      title: "Hardware Team Meeting",
-      date: "October 23 4:00 - 5:00 PM EST",
-      description: "Meeting to discuss 3D model of the robot and budget meeting with the Finance Team",
-    },
-  ];
-  const videoURL = [
-    {
-      url: "https://www.youtube.com/watch?v=2IeyrEUkBSk",
-      title: "Welcome Event"
-    },
-    {
-      url: "https://www.youtube.com/watch?v=jryzEU7WAlg",
-      title: "Strategy Meeting"
-    },
-    {
-      url: "https://www.youtube.com/watch?v=o4_9-_jwIrs",
-      title: "Software Engineering Meeting"
-    },
-  ];
-
-  const [isOpen, setIsOpen] = useState(false);
 
   const renderCard = (card, index) => {
     return (

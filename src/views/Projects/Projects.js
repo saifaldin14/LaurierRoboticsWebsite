@@ -13,50 +13,10 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { updateData, projectStageData } from './ProjectData';
 import { } from './Projects.css';
 
 const Projects = () => {
-  const updateData = [
-    {
-      message: "Update 1",
-      color: "primary"
-    },
-    {
-      message: "Update 2",
-      color: "info"
-    },
-    {
-      message: "Update 3",
-      color: "primary"
-    },
-    {
-      message: "Update 4",
-      color: "info"
-    },
-  ];
-
-  const projectStageData = [
-    {
-      title: "Stage 1 -",
-      text: "First stage of the project",
-      color: "primary"
-    },
-    {
-      title: "Stage 2 -",
-      text: "Second stage of the project",
-      color: "info"
-    },
-    {
-      title: "Stage 3 -",
-      text: "Third stage of the project",
-      color: "primary"
-    },
-    {
-      title: "Stage 4 -",
-      text: "Fourth stage of the project",
-      color: "info"
-    },
-  ];
 
   const renderUpdate = (update) => {
     return (
@@ -73,13 +33,12 @@ const Projects = () => {
 
   const renderStage = (stage) => {
     return (
-      <UncontrolledAlert color="primary" fade={false}>
+      <Alert color={stage.color} fade={false}>
         <span>
-          <b>Primary - </b>
-          This is a regular notification made with
-          color="primary"
+          <b>{stage.title}</b>
+          {stage.text}
         </span>
-      </UncontrolledAlert>
+      </Alert>
     );
   }
 
@@ -119,41 +78,7 @@ const Projects = () => {
                         <CardTitle tag="h5" id="h5">Project Stages</CardTitle>
                       </CardHeader>
                       <CardBody>
-                        <UncontrolledAlert color="primary" fade={false}>
-                          <span>
-                            <b>Primary - </b>
-                              This is a regular notification made with
-                              color="primary"
-                            </span>
-                        </UncontrolledAlert>
-                        <UncontrolledAlert color="info" fade={false}>
-                          <span>
-                            <b>Info - </b>
-                              This is a regular notification made with
-                              color="info"
-                            </span>
-                        </UncontrolledAlert>
-                        <UncontrolledAlert color="success" fade={false}>
-                          <span>
-                            <b>Success - </b>
-                              This is a regular notification made with
-                              color="success"
-                            </span>
-                        </UncontrolledAlert>
-                        <UncontrolledAlert color="warning" fade={false}>
-                          <span>
-                            <b>Warning - </b>
-                              This is a regular notification made with
-                              color="warning"
-                            </span>
-                        </UncontrolledAlert>
-                        <UncontrolledAlert color="danger" fade={false}>
-                          <span>
-                            <b>Danger - </b>
-                              This is a regular notification made with
-                              color="danger"
-                            </span>
-                        </UncontrolledAlert>
+                        {projectStageData.map(renderStage)}
                       </CardBody>
                     </Card>
                   </Col>
