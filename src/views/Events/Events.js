@@ -3,35 +3,42 @@ import { } from "./Events.css";
 import Modal from 'react-modal';
 import { NavLink } from 'react-router-dom';
 import EventDetails from "./EventDetails";
-
+import ReactPlayer from "react-player";
+import image from '../../assets/img/hardwarebg.jpg';
 const Events = () => {
-  // return (
-  //   <>
-  //     <div className="content">
-  //       {/* CODE GOES HERE INSIDE THE <DIV> */}
-  //       <h2 id="h2">Coming Soon...</h2>
-  //     </div>
-  //   </>
-  // );
   const cardInfo = [
-    // {
-    //   image: "https://cdn.eventplanner.net/imgs/xnr6226_6-tips-to-make-your-online-participants-feel-welcome-in-a-hybrid-event.jpg",
-    //   title: "Welcome Event",
-    //   date: "September 10 7:00 - 8:00 PM EST",
-    //   description: "First event of the year",
-    // },
-    // {
-    //   image: "https://d1hks021254gle.cloudfront.net/wp-content/uploads/2019/10/060-ARGO-COLONYB-10467-Sept-AWA-Cont-Hub-Story-Successful-Meeting-header-1200x675-1024x576.jpg",
-    //   title: "Robot Strategy Meeting",
-    //   date: "September 14 6:30 - 7:30 PM EST",
-    //   description: "Meeting to discuss the strategy and timeline for building the robot",
-    // },
-    // {
-    //   image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Architect-Engineer-Meeting-Peo-101361728_oxgf0s.jpg",
-    //   title: "Hardware Team Meeting",
-    //   date: "October 23 4:00 - 5:00 PM EST",
-    //   description: "Meeting to discuss 3D model of the robot and budget meeting with the Finance Team",
-    // },
+    {
+      image: image,
+      title: "Welcome Event",
+      date: "September 10 7:00 - 8:00 PM EST",
+      description: "First event of the year",
+    },
+    {
+      image: image,
+      title: "Robot Strategy Meeting",
+      date: "September 14 6:30 - 7:30 PM EST",
+      description: "Meeting to discuss the strategy and timeline for building the robot",
+    },
+    {
+      image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Architect-Engineer-Meeting-Peo-101361728_oxgf0s.jpg",
+      title: "Hardware Team Meeting",
+      date: "October 23 4:00 - 5:00 PM EST",
+      description: "Meeting to discuss 3D model of the robot and budget meeting with the Finance Team",
+    },
+  ];
+  const videoURL = [
+    {
+      url: "https://www.youtube.com/watch?v=2IeyrEUkBSk",
+      title: "Welcome Event"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=jryzEU7WAlg",
+      title: "Strategy Meeting"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=o4_9-_jwIrs",
+      title: "Software Engineering Meeting"
+    },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +70,18 @@ const Events = () => {
     );
   };
 
+  const renderVideo = (vid, index) => {
+    return (
+      <div className="card" style={{ width: '18rem', margin: '1rem' }} key={index}>
+        <div className="card-body">
+          <h5 className="card-title">{vid.title}</h5>
+          <ReactPlayer width={"18rem"} height={"16rem"} url={vid.url} controls={true} />
+        </div>
+      </div>
+    );
+  };
+
+
   const renderAllItems = () => {
     return (
       <div className="content" id="events-div">
@@ -80,8 +99,16 @@ const Events = () => {
     );
   }
 
+  const renderAllVideo = () => {
+    return (
+      <div className="content" id="render-video">
+        {videoURL.map(renderVideo)}
+      </div>
+    );
+  }
+
   return (
-    <>
+    <div className="content">
       {/* <BrowserRouter>
         <Switch>
           <Route path="/eventDetails" component={EventDetails} />
@@ -89,7 +116,9 @@ const Events = () => {
       </BrowserRouter> */}
       {cardInfo.length > 0 && renderAllItems()}
       {cardInfo.length === 0 && renderNoItems()}
-    </>
+      <h2 id="events-h2">Past Events</h2>
+      {renderAllVideo()}
+    </div>
   );
 }
 
