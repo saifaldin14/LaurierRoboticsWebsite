@@ -35,6 +35,29 @@ const Projects = () => {
     },
   ];
 
+  const projectStageData = [
+    {
+      title: "Stage 1 -",
+      text: "First stage of the project",
+      color: "primary"
+    },
+    {
+      title: "Stage 2 -",
+      text: "Second stage of the project",
+      color: "info"
+    },
+    {
+      title: "Stage 3 -",
+      text: "Third stage of the project",
+      color: "primary"
+    },
+    {
+      title: "Stage 4 -",
+      text: "Fourth stage of the project",
+      color: "info"
+    },
+  ];
+
   const renderUpdate = (update) => {
     return (
       <UncontrolledAlert
@@ -46,7 +69,20 @@ const Projects = () => {
         </span>
       </UncontrolledAlert>
     );
+  };
+
+  const renderStage = (stage) => {
+    return (
+      <UncontrolledAlert color="primary" fade={false}>
+        <span>
+          <b>Primary - </b>
+          This is a regular notification made with
+          color="primary"
+        </span>
+      </UncontrolledAlert>
+    );
   }
+
   return (
     <>
       <div className="content">
@@ -59,7 +95,7 @@ const Projects = () => {
                   This year we are building a custom self-driving robotics car.
                   We will be designing and implementing a custom neural network, as well
                   as develop the hardware to create a fully functional self-driving car.
-                    <br />
+                  <br />
                   <br />
                     Please stay tuned as
                     we update you through the progress of this incredible project!
@@ -80,7 +116,7 @@ const Projects = () => {
                   <Col md="6">
                     <Card className="card-plain">
                       <CardHeader>
-                        <CardTitle tag="h5" id="h5">Notification states</CardTitle>
+                        <CardTitle tag="h5" id="h5">Project Stages</CardTitle>
                       </CardHeader>
                       <CardBody>
                         <UncontrolledAlert color="primary" fade={false}>
