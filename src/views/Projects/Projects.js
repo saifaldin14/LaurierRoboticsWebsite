@@ -18,22 +18,31 @@ import { } from './Projects.css';
 const Projects = () => {
   const updateData = [
     {
-      title: "Update 1",
-      description: "This is a description",
+      message: "Update 1",
     },
     {
-      title: "Update 2",
-      description: "This is a another description",
+      message: "Update 2",
     },
     {
-      title: "Update 3",
-      description: "Yet another description",
+      message: "Update 3",
     },
     {
-      title: "Update 4",
-      description: "Final description",
+      message: "Update 4",
     },
-  ]
+  ];
+
+  const renderUpdate = (update) => {
+    return (
+      <UncontrolledAlert
+        color="info"
+        fade={false}
+      >
+        <span data-notify="message">
+          {update.message}
+        </span>
+      </UncontrolledAlert>
+    );
+  }
   return (
     <>
       <div className="content">
@@ -60,44 +69,7 @@ const Projects = () => {
                         <CardTitle tag="h5" id="h5">Project Updates</CardTitle>
                       </CardHeader>
                       <CardBody>
-                        <Alert color="info">
-                          <span>This is a plain notification</span>
-                        </Alert>
-                        <UncontrolledAlert color="info" fade={false}>
-                          <span>
-                            This is a notification with close button.
-                            </span>
-                        </UncontrolledAlert>
-                        <UncontrolledAlert
-                          className="alert-with-icon"
-                          color="info"
-                          fade={false}
-                        >
-                          <span
-                            data-notify="icon"
-                            className="nc-icon nc-bell-55"
-                          />
-                          <span data-notify="message">
-                            This is a notification with close button and icon.
-                            </span>
-                        </UncontrolledAlert>
-                        <UncontrolledAlert
-                          className="alert-with-icon"
-                          color="info"
-                          fade={false}
-                        >
-                          <span
-                            data-notify="icon"
-                            className="nc-icon nc-chart-pie-36"
-                          />
-                          <span data-notify="message">
-                            This is a notification with close button and icon
-                            and have many lines. You can see that the icon and
-                            the close button are always vertically aligned.
-                            This is a beautiful notification. So you don't
-                            have to worry about the style.
-                            </span>
-                        </UncontrolledAlert>
+                        {updateData.map(renderUpdate)}
                       </CardBody>
                     </Card>
                   </Col>
