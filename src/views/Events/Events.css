@@ -4,6 +4,16 @@
     color: #4B0082;
 }
 
+#no-events {
+  font-family: 'Roboto' sans-serif;
+  text-align: left;
+  color: #846b96;
+}
+
+#border{
+  border: 1px solid gray;
+}
+
 #box {
   margin: 20px;
 }

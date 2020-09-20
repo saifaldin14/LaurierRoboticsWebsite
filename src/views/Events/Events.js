@@ -58,7 +58,7 @@ const Events = () => {
     return (
       <div className="content">
         {/* CODE GOES HERE INSIDE THE <DIV> */}
-        <h2 id="events-h2">There are no events yet. Come back again to see anything new</h2>
+        <h2 id="no-events">There are no events yet</h2>
       </div>
     );
   }
@@ -80,6 +80,7 @@ const Events = () => {
       </BrowserRouter> */}
       {cardInfo.length > 0 && renderAllItems()}
       {cardInfo.length === 0 && renderNoItems()}
+      <hr id="border" />
       <h2 id="events-h2">Past Events</h2>
       {renderAllVideo()}
     </div>
