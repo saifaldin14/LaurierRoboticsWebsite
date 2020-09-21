@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import EventDetails from "./EventDetails";
 import ReactPlayer from "react-player";
 import { cardInfo, videoURL } from './EventsData';
+import { flattenDiagnosticMessageText } from "typescript";
 const Events = () => {
 
   const renderCard = (card, index) => {
@@ -36,7 +37,7 @@ const Events = () => {
 
   const renderVideo = (vid, index) => {
     return (
-      <div className="card" style={{ width: '18rem', margin: '1rem' }} key={index}>
+      <div className="card" style={{ width: '18rem', margin: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }} key={index}>
         <div className="card-body">
           <h5 className="card-title">{vid.title}</h5>
           <ReactPlayer width={"18rem"} height={"16rem"} url={vid.url} controls={true} />
