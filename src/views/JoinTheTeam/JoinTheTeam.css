@@ -4,4 +4,15 @@
 .content p {
     font-family: 'Roboto' sans-serif;
     text-align: center;
+    color: #4B0082;
+}
+.content h2 {
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+    color: #4B0082;
+}
+.content h5 {
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+    color: #4B0082;
 }
