@@ -8,7 +8,7 @@ class HomePage extends React.Component {
       <>
         <div className="content">
           <div id="logo-div">
-            <img id="logo-image" src={logo} alt="Logo" />
+            <img src="https://i.imgur.com/medNt9h.png" alt="Logo" />
           </div>
           <h1 id="heading">Wilfrid Laurier University Robotics
             <p>Founded in 2016</p>
