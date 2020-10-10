@@ -17,7 +17,12 @@ class Sponsership extends React.Component {
       <>
         <div className="content">
           {/* CODE GOES HERE INSIDE THE <DIV> */}
-          <h2 id="h2">Coming Soon...</h2>
+          <h2 id="h2">Join Us!</h2>
+          <hr />
+          <p>Here at Laurier Robotics we are a group of
+          like-minded students passionate about technology
+          and robotics. If you would like to be part of this
+            incredible team please don't hesitate to <a href="/admin/contactus">contact us</a>!</p>
         </div>
       </>
     );

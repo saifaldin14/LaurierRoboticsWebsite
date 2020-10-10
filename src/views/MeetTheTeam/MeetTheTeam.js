@@ -131,8 +131,11 @@ class MeetTheTeam extends React.Component {
                     </h3>
 
                     <h3>
-                      Team Members: Not Available ATM
+                      Team Members:
                     </h3>
+                    <ul id="teamNames">
+                      <li> Phillip Kalmanson </li>
+                    </ul>
                   </div>
                 </CardBody>
               </Card>
@@ -180,6 +183,7 @@ class MeetTheTeam extends React.Component {
                     <ul id="teamNames">
                       <li> Saif Al-Din Ali </li>
                       <li> Alex Polus</li>
+                      <li> Naftal Kerecha</li>
                     </ul>
                   </div>
                 </CardBody>

@@ -54,7 +54,7 @@ class Sidebar extends React.Component {
           >
             Laurier Robotics
           </a>
-          <img id="imageLogo" src={logo} alt="Logo" />
+          {/* <img id="imageLogo" src={logo} alt="Logo" /> */}
         </div>
         <div className="sidebar-wrapper" ref={this.sidebar}>
           <Nav>

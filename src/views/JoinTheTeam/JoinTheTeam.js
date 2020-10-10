@@ -19,10 +19,10 @@ const JoinTheTeam = () => {
   const renderNoJobs = () => {
     return (
       <div>
-        <h2>There are no job openings</h2>
-        <h5>There aren't any jobs available right now</h5>
+        <h2>There aren't any jobs available right now</h2>
+        <hr />
         <p>We will update this page as soon as new jobs are available.</p>
-        <p>Please email lauriobotics@gmail.com if you have any questions</p>
+        <p>Please <a href="/admin/contactus">contact us</a> if you have any questions</p>
       </div>
     );
   }
