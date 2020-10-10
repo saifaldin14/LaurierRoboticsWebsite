@@ -51,6 +51,7 @@ class Sidebar extends React.Component {
           <a
             href="/admin/homepage"
             className="simple-text logo-normal"
+            id="robotics-text"
           >
             Laurier Robotics
           </a>

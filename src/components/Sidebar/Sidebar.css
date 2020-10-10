@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/bugfast');
+
 #imageLogo {
     margin-left: 10px;
     width: 50px;
@@ -6,4 +8,9 @@
 #logo {
     display: flex;
     flex-direction: row;
+}
+
+#robotics-text {
+    font-family: 'Bugfast', sans-serif;
+    font-size: 20px;
 }
