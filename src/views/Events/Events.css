@@ -28,6 +28,19 @@
   flex-basis: calc(50% - 40px);
 }
 
+#vid-text {
+  font-family: 'Roboto' sans-serif;
+  text-align: center;
+  color: #4B0082;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#video-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #render-video {
   display: flex;
   flex-wrap: wrap;

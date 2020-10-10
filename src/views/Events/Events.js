@@ -40,7 +40,12 @@ const Events = () => {
       <div className="card" style={{ width: '18rem', margin: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }} key={index}>
         <div className="card-body">
           <h5 className="card-title">{vid.title}</h5>
-          <ReactPlayer width={"18rem"} height={"16rem"} url={vid.url} controls={true} />
+          <hr />
+          <ReactPlayer id="video-player" width={"25rem"} height={"20rem"} url={vid.url} controls={true} />
+          <hr />
+          <h5 className="card-text" id="vid-text">{vid.date}</h5>
+          <hr />
+          <h5 className="card-text" id="vid-text">{vid.description}</h5>
         </div>
       </div>
     );
