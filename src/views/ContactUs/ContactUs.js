@@ -14,6 +14,7 @@ class ContactUs extends React.Component {
             lauriobotics@gmail.com
           </a>
         </p>
+        <hr />
         <br />
         <p>For inquiries about sponsership, please send us an email at </p>
         <p>
