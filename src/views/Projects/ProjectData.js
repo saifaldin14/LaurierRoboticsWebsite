@@ -1,16 +1,16 @@
 export const updateData = [
-  // {
-  //   message: "Update 1",
-  //   color: "primary"
-  // },
-  // {
-  //   message: "Update 2",
-  //   color: "info"
-  // },
-  // {
-  //   message: "Update 3",
-  //   color: "primary"
-  // },
+  {
+    message: "Working on lane detection module",
+    color: "primary"
+  },
+  {
+    message: "We are building the enural netwrok that will allow the robot to identify obstacles",
+    color: "info"
+  },
+  {
+    message: "Cleaning data and images to feed to the nueral network",
+    color: "primary"
+  },
   // {
   //   message: "Update 4",
   //   color: "info"
