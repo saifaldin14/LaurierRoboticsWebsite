@@ -8,6 +8,7 @@ import Projects from "views/Projects/Projects.js";
 import Sponsership from "views/Sponsership/Sponsership.js";
 import EventDetails from "views/Events/EventDetails";
 import PrivacyPolicy from "views/AboutUs/PrivacyPolicy";
+import EventsPresentations from "views/Events/EventsPresentations";
 
 var routes = [
   {
@@ -72,6 +73,13 @@ var routes = [
     name: "Event Details",
     icon: "nc-icon nc-favourite-28",
     component: EventDetails,
+    layout: "/admin",
+  },
+  {
+    path: "/eventPresentations",
+    name: "Event Presentations",
+    icon: "nc-icon nc-favourite-28",
+    component: EventsPresentations,
     layout: "/admin",
   },
   {

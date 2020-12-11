@@ -77,6 +77,29 @@ const Events = () => {
     );
   }
 
+  const renderPresentations = () => {
+    return (
+      <div className="card" style={{ width: '18rem', margin: '1rem' }}>
+        <img className="card-img-top"
+          src={"https://cms-assets.tutsplus.com/uploads/users/23/posts/33062/image/making-great-business-presentations-graphic-cover.jpg"}
+          alt="Card image cap">
+        </img>
+        <div className="card-body">
+          <h5 className="card-title">Previous Presentations</h5>
+          <h6 className="card-text">Navigate to see slides from previous events</h6>
+          <NavLink
+            className="nav-link"
+            activeClassName="active"
+            to={{
+              pathname: "/admin/eventPresentations",
+            }}>
+            View Details
+          </NavLink>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="content">
       {/* <BrowserRouter>
@@ -89,6 +112,10 @@ const Events = () => {
       <hr id="border" />
       <h2 id="events-h2">Past Events</h2>
       {renderAllVideo()}
+
+      <hr id="border" />
+      <h2 id="events-h2">Past Presentations</h2>
+      {renderPresentations()}
     </div>
   );
 }

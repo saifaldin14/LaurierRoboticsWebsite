@@ -4,11 +4,11 @@ export const updateData = [
     color: "primary"
   },
   {
-    message: "We are building the enural netwrok that will allow the robot to identify obstacles",
+    message: "We are building the neural network that will allow the robot to identify obstacles",
     color: "info"
   },
   {
-    message: "Cleaning data and images to feed to the nueral network",
+    message: "Cleaning data and images to feed to the neural network",
     color: "primary"
   },
   // {
